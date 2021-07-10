@@ -1,0 +1,174 @@
+body{
+    background-color: rgb(32, 32, 32);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    overflow: hidden;
+    background-image: url('images/machowoman.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+    margin-top: 0rem;
+    letter-spacing: 0.2rem;
+}
+
+.countdown{
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.countdown div{
+    margin: 0 1rem;
+}
+
+.countdown h3{
+    color: rgb(218, 214, 214);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+   
+}
+
+.countdown p{
+    padding: 4rem;
+    background-color: rgb(167, 24, 24);
+    border-radius: 4rem;
+    font-size: 3rem;
+     font-weight: 900;
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .social-icons a{
+    padding: 1rem;
+    color: white;
+    font-size: 3rem;
+}
+
+#copyright{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#copyright a{
+    color: rgb(167, 24, 24);
+}
+
+@media (max-width: 698px) {
+    .container{
+        
+        max-width: auto;
+    }
+
+    .countdown{
+        display: grid;
+        grid-template-columns: 1fr 1fr;;
+    }
+
+    .countdown div{
+    margin: 1rem 2rem;
+}
+
+    h1{
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 550px) {
+    .container{
+        max-width: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .countdown{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    .countdown div{
+    margin: 1rem 2rem;
+}
+
+    h1{
+        
+        font-size: 2.5rem;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 374px) {
+    .container{
+        max-width: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .countdown{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    .countdown p{
+    padding: 3rem;
+    background-color: rgb(167, 24, 24);
+    border-radius: 4rem;
+    font-size: 3rem;
+}
+
+    .countdown div{
+    margin: 1rem 2rem;
+}
+
+    h1{
+        
+        font-size: 2rem;
+        margin: 0 auto;
+    }
+}
